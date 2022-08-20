@@ -17,7 +17,7 @@ const Positon = ({ character, comp_id }) => {
         el.style.backgroundColor="blue"
         const e2 = document.getElementById(`${character.active}-div`);
         var left = e2.offsetLeft
-        el.innerHTML = character.active+" : "+"x-position   "+left;
+        el.innerHTML = character.active + "x-position" + left;
 
         }else{
             el.hidden=true
@@ -32,7 +32,7 @@ const Positon = ({ character, comp_id }) => {
         el.style.backgroundColor="blue"
         const e2 = document.getElementById(`${character.active}-div`);
         var top = e2.offsetTop
-        el.innerHTML = character.active+" : "+"y-position   "+top;
+        el.innerHTML = character.active+ "y-position" + top;
 
         }else{
             el.hidden=true
@@ -47,7 +47,7 @@ const Positon = ({ character, comp_id }) => {
         const character_angle = character.characters.find(
             (x) => x.id === character.active
           );
-        el.innerHTML = character.active+" : "+"direction   "+(90+character_angle.angle);
+        el.innerHTML = character.active+ "direction" +(90+character_angle.angle);
 
         }else{
             el.hidden=true

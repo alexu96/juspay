@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import { setCharacterAngle } from "../../redux/character/actions";
 import RedoIcon from "@material-ui/icons/Redo";
-import Paper from "@material-ui/core/Paper";
+
 
 const TurnClockWise = ({ character, characterAngle, comp_id }) => {
 
